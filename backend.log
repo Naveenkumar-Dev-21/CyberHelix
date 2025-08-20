@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/home/naveen/Documents/Projects/automatic-pentesting/backend_server.py", line 19, in <module>
+    from fastapi import FastAPI, HTTPException, BackgroundTasks, WebSocket, WebSocketDisconnect, Query, Body
+ModuleNotFoundError: No module named 'fastapi'

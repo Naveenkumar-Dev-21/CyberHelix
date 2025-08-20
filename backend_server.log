@@ -1,0 +1,69 @@
+2025-08-19 13:05:12,319 - __main__ - INFO - Starting Matrix Pentesting Desktop Application...
+2025-08-19 13:05:12,392 - backend_server - INFO - Matrix Pentesting Backend starting...
+2025-08-19 13:05:12,393 - backend_server - INFO - Loaded 21 modules
+2025-08-19 13:05:12,393 - backend_server - INFO - Backend ready to accept requests
+2025-08-19 13:07:23,717 - __main__ - INFO - Starting Matrix Pentesting Desktop Application...
+2025-08-19 13:07:23,756 - backend_server - INFO - Matrix Pentesting Backend starting...
+2025-08-19 13:07:23,756 - backend_server - INFO - Loaded 21 modules
+2025-08-19 13:07:23,756 - backend_server - INFO - Backend ready to accept requests
+2025-08-19 13:07:25,726 - __main__ - INFO - Backend server started on 127.0.0.1:8000
+2025-08-19 13:07:27,187 - matrix_frontend_integration - INFO - Connected to backend: {'status': 'healthy', 'timestamp': '2025-08-19T13:07:27.187193', 'active_tasks': 0, 'connected_clients': 0}
+2025-08-19 13:07:27,202 - matrix_frontend_integration - INFO - WebSocket connected
+2025-08-19 13:07:27,320 - __main__ - INFO - Connected to backend successfully
+2025-08-19 13:08:14,600 - src.web_assessor - INFO - Starting web/API assessment: testphp.vulnweb.com
+2025-08-19 13:08:14,601 - backend_server - ERROR - Task 9b2da432-de43-4836-bac2-7a978a926066 failed: module 'src.utils' has no attribute 'get_timestamp'
+2025-08-19 13:08:14,602 - backend_server - ERROR - Unhandled exception: module 'src.utils' has no attribute 'get_timestamp'
+2025-08-19 13:12:57,338 - backend_server - INFO - Matrix Pentesting Backend starting...
+2025-08-19 13:12:57,338 - backend_server - INFO - Loaded 21 modules
+2025-08-19 13:12:57,339 - backend_server - INFO - Backend ready to accept requests
+2025-08-19 13:13:05,787 - backend_server - INFO - Matrix Pentesting Backend shutting down...
+2025-08-19 13:13:05,788 - backend_server - INFO - Shutdown complete
+2025-08-19 13:14:27,224 - __main__ - INFO - Starting Matrix Pentesting Desktop Application...
+2025-08-19 13:14:27,276 - backend_server - INFO - Matrix Pentesting Backend starting...
+2025-08-19 13:14:27,277 - backend_server - INFO - Loaded 21 modules
+2025-08-19 13:14:27,277 - backend_server - INFO - Backend ready to accept requests
+2025-08-19 13:14:29,233 - __main__ - INFO - Backend server started on 127.0.0.1:8000
+2025-08-19 13:14:30,509 - matrix_frontend_integration - INFO - Connected to backend: {'status': 'healthy', 'timestamp': '2025-08-19T13:14:30.509066', 'active_tasks': 0, 'connected_clients': 0}
+2025-08-19 13:14:30,526 - matrix_frontend_integration - INFO - WebSocket connected
+2025-08-19 13:14:30,609 - __main__ - INFO - Connected to backend successfully
+2025-08-19 13:14:55,488 - src.reconnaissance - INFO - Starting reconnaissance on target: testphp.vulnweb.com
+2025-08-19 13:14:55,488 - src.target_classifier - INFO - Classifying target: testphp.vulnweb.com
+2025-08-19 13:16:46,726 - src.reconnaissance - INFO - Running comprehensive nmap scan with root privileges on: 44.228.249.3
+2025-08-19 13:16:46,727 - src.reconnaissance - INFO - Target type: domain, Subtype: web_domain
+2025-08-19 13:16:46,775 - src.privilege_manager - INFO - Executing command with user privileges
+2025-08-19 13:16:46,776 - src.privilege_manager - INFO - Justification: Default user-level execution for sudo
+2025-08-19 13:16:46,776 - src.privilege_manager - INFO - Running user command: sudo /usr/bin/nmap -p 1-1000,8000-9000 -sS -sV -sC -O --version-intensity 2 -T5 --max-retries 1 --host-timeout 60s --max-rtt-timeout 200ms --max-scan-delay 10ms --min-rate 1000 --defeat-rst-ratelimit 44.228.249.3
+2025-08-19 13:27:06,264 - backend_server - INFO - Matrix Pentesting Backend starting...
+2025-08-19 13:27:06,264 - backend_server - INFO - Loaded 21 modules
+2025-08-19 13:27:06,264 - backend_server - INFO - Backend ready to accept requests
+2025-08-19 13:27:10,987 - backend_server - INFO - Matrix Pentesting Backend shutting down...
+2025-08-19 13:27:10,987 - backend_server - INFO - Shutdown complete
+2025-08-19 13:31:13,968 - backend_server - INFO - Matrix Pentesting Backend starting...
+2025-08-19 13:31:13,968 - backend_server - INFO - Loaded 21 modules
+2025-08-19 13:31:13,968 - backend_server - INFO - Backend ready to accept requests
+2025-08-19 13:33:02,066 - src.reconnaissance - INFO - Starting reconnaissance on target: testphp.vulnweb.com
+2025-08-19 13:33:02,066 - src.target_classifier - INFO - Classifying target: testphp.vulnweb.com
+2025-08-19 13:35:07,644 - src.reconnaissance - INFO - Running comprehensive nmap scan with root privileges on: 44.228.249.3
+2025-08-19 13:35:07,645 - src.reconnaissance - INFO - Target type: domain, Subtype: web_domain
+2025-08-19 13:35:07,680 - src.privilege_manager - INFO - Executing command with user privileges
+2025-08-19 13:35:07,681 - src.privilege_manager - INFO - Justification: Default user-level execution for sudo
+2025-08-19 13:35:07,681 - src.privilege_manager - INFO - Running user command: sudo /usr/bin/nmap -p 1-1000,8000-9000 -sS -sV -sC -O --version-intensity 2 -T5 --max-retries 1 --host-timeout 60s --max-rtt-timeout 200ms --max-scan-delay 10ms --min-rate 1000 --defeat-rst-ratelimit 44.228.249.3
+2025-08-19 13:35:09,775 - src.reconnaissance - ERROR - Nmap command failed: sudo: unable to read password: Input/output error
+sudo: a password is required
+
+2025-08-19 13:35:09,775 - src.reconnaissance - INFO - Running basic nmap scan on: 44.228.249.3
+2025-08-19 13:35:09,796 - src.util_functions - INFO - Running command: /usr/bin/nmap -sT -sV --top-ports 200 --version-intensity 1 -T5 --max-retries 1 --host-timeout 30s --max-rtt-timeout 100ms --max-scan-delay 5ms --min-rate 500 44.228.249.3
+2025-08-19 13:35:14,250 - src.reconnaissance - INFO - Looking up 44.228.249.3 in Shodan
+2025-08-19 13:35:17,091 - src.reconnaissance - INFO - Enumerating subdomains for: testphp.vulnweb.com
+2025-08-19 13:35:17,110 - src.util_functions - INFO - Running command: /usr/bin/amass enum -d testphp.vulnweb.com -timeout 5
+2025-08-19 13:37:54,758 - src.reconnaissance - INFO - Enumerating DNS records for: testphp.vulnweb.com
+2025-08-19 13:37:55,509 - src.reconnaissance - INFO - Gathering OSINT data for: testphp.vulnweb.com
+2025-08-19 13:37:55,539 - src.util_functions - INFO - Running command: /usr/bin/theHarvester -d testphp.vulnweb.com -l 100 -b google,bing,yahoo
+2025-08-19 13:37:55,540 - src.util_functions - ERROR - Command not found: /usr/bin/theHarvester
+2025-08-19 13:37:55,624 - backend_server - INFO - Matrix Pentesting Backend shutting down...
+2025-08-19 13:37:55,624 - backend_server - INFO - Shutdown complete
+2025-08-20 06:34:06,672 - backend_server - INFO - Matrix Pentesting Backend starting...
+2025-08-20 06:34:06,672 - backend_server - INFO - Loaded 21 modules
+2025-08-20 06:34:06,672 - backend_server - INFO - Backend ready to accept requests
+2025-08-20 06:34:07,783 - backend_server - INFO - Matrix Pentesting Backend shutting down...
+2025-08-20 06:34:07,783 - backend_server - INFO - Shutdown complete

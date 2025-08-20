@@ -1,0 +1,113 @@
+# Security Assessment Framework Configuration
+# For authorized testing only
+
+# Authorization settings
+authorization:
+  # List of authorized targets (IP addresses or hostnames)
+  authorized_targets:
+    - 192.168.1.0/24  # Local network (example)
+    - testlab.local   # Test lab domain
+    - sandbox.company.com  # Company sandbox
+  
+  # Require explicit confirmation for each scan
+  require_confirmation: true
+  
+  # Authorization token/key (for API-based authorization)
+  auth_token: ""
+
+# Scanning modules configuration
+modules:
+  network_discovery:
+    enabled: true
+    timeout: 300  # seconds
+    options:
+      - "-sV"  # Service version detection
+      - "-sC"  # Default scripts
+      - "-O"   # OS detection
+      - "--open"  # Only show open ports
+    
+  vulnerability_scanning:
+    enabled: true
+    timeout: 600  # seconds
+    scan_types:
+      - "vuln"  # Vulnerability scripts
+      - "safe"  # Safe scripts only
+    
+  web_application:
+    enabled: true
+    timeout: 600  # seconds
+    ports:
+      - 80
+      - 443
+      - 8080
+      - 8443
+    tools:
+      nikto: true
+      dirb: false
+      gobuster: false
+    
+  ssl_assessment:
+    enabled: true
+    timeout: 120  # seconds
+    ports:
+      - 443
+      - 8443
+    
+  dns_enumeration:
+    enabled: true
+    timeout: 60  # seconds
+    
+  smb_enumeration:
+    enabled: false  # Disabled by default
+    timeout: 120  # seconds
+
+# Reporting configuration
+reporting:
+  formats:
+    - json
+    - html
+    - txt
+  
+  output_directory: "./reports"
+  
+  # Include raw scan outputs in report
+  include_raw_output: true
+  
+  # Email report settings (optional)
+  email:
+    enabled: false
+    smtp_server: ""
+    smtp_port: 587
+    from_address: ""
+    to_addresses: []
+    
+# Rate limiting and performance
+performance:
+  # Maximum parallel scans
+  max_parallel_scans: 3
+  
+  # Delay between scans (seconds)
+  scan_delay: 2
+  
+  # Maximum threads per scan
+  max_threads: 10
+  
+# Logging configuration
+logging:
+  level: INFO  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "security_assessment.log"
+  console: true
+  
+# Safe mode settings
+safe_mode:
+  # Never run exploits
+  no_exploits: true
+  
+  # Avoid aggressive scanning
+  no_aggressive: true
+  
+  # Skip potentially dangerous checks
+  skip_dangerous: true
+  
+  # Maximum scan intensity (1-5, where 1 is lightest)
+  max_intensity: 3
